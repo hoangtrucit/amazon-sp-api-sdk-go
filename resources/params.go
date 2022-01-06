@@ -1,7 +1,6 @@
 package resources
 
 import (
-	"net/url"
 	"time"
 )
 
@@ -10,7 +9,7 @@ type SellingPartnerParams struct {
 	Method      string
 	APIPath     string
 	Body        string
-	Query       url.Values
+	Query       map[string]interface{}
 	RestoreRate time.Duration
 	PathParams  map[string]string
 }
